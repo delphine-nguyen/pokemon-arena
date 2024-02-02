@@ -31,18 +31,22 @@ require_once("./class/PokemonWater.php");
                     foreach ($_SESSION["contestants"] as $pokemon) {
                         $id = $pokemon->getId();
                         echo "<section class='pokemonCard'>";
+
                         echo "<article class='sprite'>";
                         echo "<img class='sprite' src='";
                         echo $pokemon->getSprite();
                         echo "'/>";
                         echo "</article>";
+
                         echo "<article class='name'>";
                         echo $pokemon->getName();
+
                         echo "</article>";
                         echo "<article class='hp'>";
                         echo "<p>HP</p>";
                         echo "<p>" . $pokemon->getHp() . "</p>";
                         echo "</article>";
+
                         echo "<article class='atk'>";
                         echo "<p>ATK</p>";
                         echo "<p>" . $pokemon->getAtk() . "</p>";

@@ -14,11 +14,11 @@ if (isset($_GET['fight'])) {
 
     if (count($chosen) - 1 > 2) {
         $_SESSION["errorMsg"] = "Only choose two contestants at a time";
-        header("Location:./arena.php");
+        header("Location:./pokedex.php");
         exit();
     } elseif (count($chosen) - 1 < 2) {
         $_SESSION["errorMsg"] = "Please select two pokemons";
-        header("Location:./arena.php");
+        header("Location:./pokedex.php");
         exit();
     } else {
 
@@ -40,7 +40,7 @@ if (isset($_GET['fight'])) {
         $pokemon->setHp($pokemon->getMaxHp());
     }
     $_SESSION["errorMsg"] = "";
-    header("Location: ./arena.php");
+    header("Location: ./pokedex.php");
     exit();
 } elseif (isset($_GET['delete'])) {
     session_destroy();
