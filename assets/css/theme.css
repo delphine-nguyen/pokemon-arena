@@ -1,0 +1,61 @@
+/* Fonts */
+
+@font-face {
+	font-family: pokemonFont;
+	src: url("../fonts/Pokemon Solid.ttf");
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: pokemonFont;
+	src: url("../fonts/Pokemon Hollow.ttf");
+}
+
+.fontMain {
+	font-family: pokemonFont;
+}
+
+/* Colors */
+
+.primaryColor {
+	color: rgb(255, 123, 123);
+}
+
+.secondaryColor {
+	color: rgb(90, 205, 189);
+}
+
+.thirdColor {
+	color: rgb(123, 213, 115);
+}
+
+.primaryColorBg {
+	background-color: rgb(213, 65, 90);
+}
+
+.secondaryColorBg {
+	background-color: rgb(32, 148, 131);
+}
+
+.thirdColorBg {
+	background-color: rgb(49, 123, 82);
+}
+
+/* Body & main */
+
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+main {
+	width: 70vw;
+	margin: 20px auto;
+}
+
+/* Titles */
+
+h1 {
+	font-weight: bold;
+}
