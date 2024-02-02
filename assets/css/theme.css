@@ -56,14 +56,45 @@ main {
 
 	min-height: 100vh;
 	width: 70vw;
-	margin: 50px auto;
+	margin: 0 auto;
 }
 
 /* Titles */
 
 h1 {
 	font-weight: bold;
-	font-size: 80px;
+	font-size: 100px;
+}
+
+/* Parallax */
+.parallax {
+	display: grid;
+
+	grid-template-columns: repeat(5, 1fr);
+	grid-template-rows: 1fr 1fr 1fr;
+
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+	justify-items: center;
+
+	min-height: 100vh;
+}
+
+.parallax > .blankSpace {
+	grid-column: 2 / span 3;
+}
+
+.parallax > img {
+	width: 250px;
+	height: 200px;
+}
+
+.parallax {
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 /* Header */
@@ -71,12 +102,6 @@ h1 {
 header {
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
-
-	padding: 10px 50px;
-}
-
-header > img {
-	width: 250px;
-	height: 200px;
+	min-height: 100vh;
+	justify-content: center;
 }
