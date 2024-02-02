@@ -10,9 +10,9 @@
     <title>Pokemon Arena</title>
 </head>
 
-<body class="secondaryColorBg">
+<body class="gradient1">
 
-    <section class="parallax">
+    <section id="background">
         <img src="./assets/img/ponyta.png" alt="Ponyta">
         <img src="./assets/img/chansey.png" alt="Chansey">
         <img src="./assets/img/tangela.png" alt="Tanglea">
@@ -28,7 +28,7 @@
         <img src="./assets/img/poliwrath.png" alt="Poliwrath">
     </section>
 
-    <header class="primaryColorBg">
+    <header>
         <h1 class="fontMain">Pokemon Arena</h1>
     </header>
 

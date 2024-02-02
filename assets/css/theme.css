@@ -41,6 +41,14 @@
 	background-color: rgb(49, 123, 82);
 }
 
+.gradient1 {
+	background: linear-gradient(
+		0deg,
+		rgba(32, 148, 131, 1) 30%,
+		rgba(213, 65, 90, 1) 70%
+	);
+}
+
 /* Body & main */
 
 body {
@@ -57,17 +65,21 @@ main {
 	min-height: 100vh;
 	width: 70vw;
 	margin: 0 auto;
+
+	z-index: 1;
 }
 
 /* Titles */
 
 h1 {
 	font-weight: bold;
-	font-size: 100px;
+	font-size: 140px;
+
+	z-index: 1;
 }
 
 /* Parallax */
-.parallax {
+#background {
 	display: grid;
 
 	grid-template-columns: repeat(5, 1fr);
@@ -79,22 +91,18 @@ h1 {
 	justify-items: center;
 
 	min-height: 100vh;
+
+	position: fixed;
+	width: 100%;
 }
 
-.parallax > .blankSpace {
+#background > .blankSpace {
 	grid-column: 2 / span 3;
 }
 
-.parallax > img {
+#background > img {
 	width: 250px;
 	height: 200px;
-}
-
-.parallax {
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
 }
 
 /* Header */
