@@ -11,21 +11,21 @@ pokemonName.addEventListener("focusout", () => {
 
 hp.addEventListener("focusout", () => {
 	let hpPar = document.querySelector(
-		"#preview > .card > .hp  > p:nth-of-type(2)"
+		"#preview > .card > .properties > .hp  > p:nth-of-type(2)"
 	);
 	hpPar.innerText = hp.value;
 });
 
 atk.addEventListener("focusout", () => {
 	let atkPar = document.querySelector(
-		"#preview > .card > .atk  > p:nth-of-type(2)"
+		"#preview > .card > .properties >.atk  > p:nth-of-type(2)"
 	);
 	atkPar.innerText = atk.value;
 });
 
 typePokemon.addEventListener("click", () => {
 	let typePar = document.querySelector(
-		"#preview > .card > .typePokemon  > p:nth-of-type(2)"
+		"#preview > .card > .properties >.typePokemon  > p:nth-of-type(2)"
 	);
 	typePar.innerText = typePokemon.value;
 });
