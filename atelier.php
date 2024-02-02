@@ -10,32 +10,49 @@
     <title>Atelier</title>
 </head>
 
-<body>
+<body class="gradient2">
+
 
     <?php include("./background.php"); ?>
 
+    <div class="nav-container thirdColorBg">
+        <?php include("./navBar.php"); ?>
+    </div>
+
     <header>
-        <h2>Atelier</h2>
+        <h2 class="fontMain">Atelier</h2>
     </header>
 
-    <form action="./createPokemon.php" method="post">
-        <article>
+    <main>
+
+        <section id="preview">
+            <article class="card">
+                <img src="./assets/img/pokeball_closed.png" alt="Closed pokeball" class="sprite">
+                <h3></h3>
+                <p></p>
+                <p></p>
+                <p></p>
+            </article>
+        </section>
+
+        <form action="./createPokemon.php" method="post">
+
             <label for="name">Name</label>
-            <input type="text" name="name" id="name" value="Bulbizarre">
-        </article>
-        <article>
+            <input type="text" name="name" id="name">
+
+
             <label for="hp">HP</label>
-            <input type="number" name="hp" id="hp" value="10" min="1">
-        </article>
-        <article>
+            <input type="number" name="hp" id="hp" min="1">
+
+
             <label for="atk">Attack</label>
-            <input type="number" name="atk" id="atk" value="2" min="1">
-        </article>
-        <article>
+            <input type="number" name="atk" id="atk" min="1">
+
+
             <label for=" sprite">Sprite</label>
-            <input type="url" name="sprite" id="sprite" value="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png">
-        </article>
-        <article>
+            <input type="url" name="sprite" id="sprite">
+
+
             <label for="typePokemon">Type</label>
             <select name="typePokemon" id="typePokemon">
                 <option value="normal">Normal</option>
@@ -43,17 +60,19 @@
                 <option value="water">Water</option>
                 <option value="plant">Plant</option>
             </select>
-        </article>
-        <button type="submit">Submit</button>
-    </form>
-    <section class="logError">
-        <?php
-        session_start();
-        if (isset($_SESSION["errorMsg"]) && !empty($_SESSION["errorMsg"])) {
-            echo "<p class='errorMsg'>" . $_SESSION["errorMsg"] . "</p>";
-        }
-        ?>
-    </section>
+
+            <button type="submit">Create</button>
+        </form>
+        <section class="logError">
+            <?php
+            session_start();
+            if (isset($_SESSION["errorMsg"]) && !empty($_SESSION["errorMsg"])) {
+                echo "<p class='errorMsg'>" . $_SESSION["errorMsg"] . "</p>";
+            }
+            ?>
+        </section>
+    </main>
+    <script type="text/javascript" src="./assets/js/previewCreation.js"></script>
 </body>
 
 </html>

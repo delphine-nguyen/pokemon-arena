@@ -14,6 +14,10 @@
 
     <?php include("./background.php"); ?>
 
+    <div class="nav-container primaryColorBg">
+        <?php include("./navBar.php"); ?>
+    </div>
+
     <header>
         <h1 class="fontMain">Pokemon Arena</h1>
     </header>
