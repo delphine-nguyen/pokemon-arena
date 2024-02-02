@@ -25,6 +25,8 @@ typePokemon.addEventListener("click", () => {
 });
 
 sprite.addEventListener("focusout", () => {
-	let spriteImg = document.querySelector("#preview > article > .sprite");
-	spriteImg.src = sprite.value;
+	if (sprite.value != "") {
+		let spriteImg = document.querySelector("#preview > article > .sprite");
+		spriteImg.src = sprite.value;
+	}
 });
