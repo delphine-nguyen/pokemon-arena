@@ -14,6 +14,7 @@
 
     <header class="primaryColorBg">
         <h1 class="fontMain">Pokemon Arena</h1>
+        <img src="./assets/img/ivysaur.png" alt="Ivysaur">
     </header>
 
     <main>
