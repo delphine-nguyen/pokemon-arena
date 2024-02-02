@@ -194,12 +194,20 @@ header {
 	padding: 10px;
 }
 
+.card > .properties > article {
+	display: grid;
+	grid-template-columns: 1fr 50px;
+	justify-items: end;
+
+	gap: 20px;
+}
+
 .card > .sprite,
 .card > .name {
 	margin-bottom: 15px;
 }
 
-.card > p {
+.card > article > p {
 	padding: 5px;
 }
 

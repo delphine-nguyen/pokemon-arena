@@ -25,6 +25,8 @@ form {
 	padding: 10px;
 
 	width: 50%;
+
+	opacity: 0.9;
 }
 
 input {
@@ -44,4 +46,6 @@ button {
 #preview {
 	border: 1px solid #4c5da6;
 	width: 50%;
+
+	opacity: 0.9;
 }
