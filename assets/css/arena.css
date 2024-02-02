@@ -20,18 +20,6 @@
 	height: 50px;
 }
 
-.hp::before {
-	content: "HP: ";
-}
-
-.atk::before {
-	content: "ATK: ";
-}
-
-.typePokemon::before {
-	content: "Typer: ";
-}
-
 #choiceMenu {
 	display: flex;
 	flex-direction: column;
