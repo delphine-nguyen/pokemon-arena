@@ -41,6 +41,10 @@
 	background-color: #4c5da6;
 }
 
+.fourthColorBg {
+	background-color: #57cf59;
+}
+
 .gradient1 {
 	background: linear-gradient(
 		0deg,
@@ -55,6 +59,15 @@
 		0deg,
 		rgba(198, 205, 112, 1) 30%,
 		rgba(76, 93, 166, 1) 70%
+	);
+}
+
+.gradient3 {
+	background: rgb(219, 172, 77);
+	background: linear-gradient(
+		0deg,
+		rgba(219, 172, 77, 1) 30%,
+		rgba(87, 207, 89, 1) 70%
 	);
 }
 
@@ -85,7 +98,7 @@ nav {
 }
 
 .nav-container {
-	padding: 2px;
+	padding: 5px;
 	opacity: 0;
 	position: sticky;
 	top: 0;

@@ -6,20 +6,29 @@ require_once("./class/PokemonPlant.php");
 require_once("./class/PokemonWater.php");
 
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/arena.css">
-    <title>Choose Your Contestants</title>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/theme.css">
+    <link rel="stylesheet" href="./assets/css/pokedex.css">
+    <title>Pokedex</title>
 </head>
 
-<body>
+<body class="gradient3">
+
+
+    <?php include("./background.php"); ?>
+
+    <div class="nav-container fourthColorBg">
+        <?php include("./navBar.php"); ?>
+    </div>
+
     <header>
-        <h2>Choose Your Contestants</h2>
+        <h2 class="fontMain">Pokedex</h2>
     </header>
 
     <main>
