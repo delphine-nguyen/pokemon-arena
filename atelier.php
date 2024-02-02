@@ -29,9 +29,18 @@
             <article class="card">
                 <img src="./assets/img/pokeball_closed.png" alt="Closed pokeball" class="sprite">
                 <h3 class="name fontMain">Pokemon</h3>
-                <p class="hp">HP: </p>
-                <p class="atk">ATK: </p>
-                <p class="typePokemon">Type: normal</p>
+                <article class="hp">
+                    <p>HP</p>
+                    <p>---</p>
+                </article>
+                <article class="atk">
+                    <p>ATK</p>
+                    <p>---</p>
+                </article>
+                <article class="typePokemon">
+                    <p>Type</p>
+                    <p>---</p>
+                </article>
             </article>
         </section>
 
