@@ -27,7 +27,7 @@ foreach ($properties as $property) {
         echo $pokemonInfo[$property];
     } else {
         $_SESSION["errorMsg"] = "Please fill input '$property'";
-        header("Location: ./index.php");
+        header("Location: ./atelier.php#main");
         exit();
     }
 }
@@ -71,7 +71,7 @@ switch ($pokemonInfo["typePokemon"]) {
         break;
     default:
         $_SESSION["errorMsg"] = "Type of pokemon must be either 'normal', 'water', 'fire' or 'plant'";
-        header("Location: ./index.php");
+        header("Location: ./atelier.php#main");
         exit();
 }
 
