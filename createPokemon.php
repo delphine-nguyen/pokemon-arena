@@ -18,7 +18,7 @@ if (!isset($_SESSION["counter"])) {
     $_SESSION["counter"] = 0;
 }
 
-$properties = ["name", "hp", "atk", "sprite", "typePokemon"];
+$properties = ["name", "hp", "atk", "typePokemon"];
 $pokemonInfo = [];
 
 foreach ($properties as $property) {
@@ -30,6 +30,12 @@ foreach ($properties as $property) {
         header("Location: ./atelier.php#menu");
         exit();
     }
+}
+
+if (isset($_POST["sprite"]) && !empty($_POST["sprite"])) {
+    $pokemonInfo["sprite"] = cleanInput($_POST["sprite"]);
+} else {
+    $pokemonInfo["sprite"] = "./assets/img/pokeball_closed.png";
 }
 
 switch ($pokemonInfo["typePokemon"]) {

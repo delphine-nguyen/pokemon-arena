@@ -28,10 +28,10 @@
         <section id="preview">
             <article class="card">
                 <img src="./assets/img/pokeball_closed.png" alt="Closed pokeball" class="sprite">
-                <h3></h3>
-                <p></p>
-                <p></p>
-                <p></p>
+                <h3 class="name fontMain">Pokemon</h3>
+                <p class="hp">HP: </p>
+                <p class="atk">ATK: </p>
+                <p class="typePokemon">Type: normal</p>
             </article>
         </section>
 
