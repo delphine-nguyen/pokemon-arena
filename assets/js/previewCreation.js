@@ -23,3 +23,8 @@ typePokemon.addEventListener("click", () => {
 	let typePar = document.querySelector("#preview > article > .typePokemon");
 	typePar.innerText = "Type: " + typePokemon.value;
 });
+
+sprite.addEventListener("focusout", () => {
+	let spriteImg = document.querySelector("#preview > article > .sprite");
+	spriteImg.src = sprite.value;
+});
