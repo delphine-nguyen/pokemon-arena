@@ -4,13 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/theme.css">
+    <link rel="stylesheet" href="./assets/css/atelier.css">
     <title>Atelier</title>
 </head>
 
 <body>
+
+    <?php include("./background.php"); ?>
+
     <header>
         <h2>Atelier</h2>
     </header>
+
     <form action="./createPokemon.php" method="post">
         <article>
             <label for="name">Name</label>
