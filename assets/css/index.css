@@ -1,12 +1,16 @@
+/* Menu */
+
 #menu {
 	display: flex;
 	flex-wrap: wrap;
 
-	justify-content: space-around;
+	justify-content: center;
 	align-items: center;
 
-	gap: 20px;
+	gap: 25vw;
 }
+
+/* Img */
 
 #create > img {
 	width: 300px;

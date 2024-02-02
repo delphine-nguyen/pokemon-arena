@@ -50,12 +50,33 @@ body {
 }
 
 main {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	min-height: 100vh;
 	width: 70vw;
-	margin: 20px auto;
+	margin: 50px auto;
 }
 
 /* Titles */
 
 h1 {
 	font-weight: bold;
+	font-size: 80px;
+}
+
+/* Header */
+
+header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	padding: 10px 50px;
+}
+
+header > img {
+	width: 250px;
+	height: 200px;
 }
