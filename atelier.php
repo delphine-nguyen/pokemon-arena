@@ -23,9 +23,9 @@
         <h2 class="fontMain">Atelier</h2>
     </header>
 
-    <main>
+    <main id="main">
 
-        <section id="preview">
+        <section id="preview" class="thirdColorBg">
             <article class="card">
                 <img src="./assets/img/pokeball_closed.png" alt="Closed pokeball" class="sprite">
                 <h3 class="name fontMain">Pokemon</h3>
@@ -35,7 +35,7 @@
             </article>
         </section>
 
-        <form action="./createPokemon.php" method="post">
+        <form action="./createPokemon.php" method="post" class="thirdColorBg">
 
             <label for="name">Name</label>
             <input type="text" name="name" id="name">
