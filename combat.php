@@ -7,7 +7,6 @@ require_once("./class/PokemonWater.php");
 
 function combat($pokemon1, $pokemon2)
 {
-    echo "<hr>";
     $turn = 0;
     while (!$pokemon1->isDead() && !$pokemon2->isDead()) {
         $pokemon1Hp = $pokemon1->getHp();
