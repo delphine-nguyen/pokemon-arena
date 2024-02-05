@@ -49,8 +49,7 @@ require_once("./class/PokemonWater.php");
             <section id="contestantsCards">
                 <?php
                 if (isset($_SESSION["contestants"]) && !empty($_SESSION["contestants"])) :
-                    $index = 0;
-                    foreach ($_SESSION["contestants"] as $pokemon) : ?>
+                    foreach ($_SESSION["contestants"] as $index => $pokemon) : ?>
 
                         <article class='card fourthColorBg'>
 
@@ -84,7 +83,6 @@ require_once("./class/PokemonWater.php");
                             </section>
                             <input type='checkbox' name='<?php echo $index ?>'>
                         </article>
-                        <?php $index++; ?>
                 <?php endforeach;
                 endif ?>
             </section>
