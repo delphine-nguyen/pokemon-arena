@@ -2,7 +2,6 @@
 
 class Pokemon
 {
-    protected int $id;
     protected string $name;
     protected int $hp;
     protected int $maxHp;
@@ -15,13 +14,11 @@ class Pokemon
         int $maxHp,
         int $atk,
         string $sprite,
-        int $id
     ) {
         $this->name = $name;
         $this->maxHp = $maxHp;
         $this->atk = $atk;
         $this->sprite = $sprite;
-        $this->id = $id;
         $this->hp = $maxHp;
     }
 
@@ -47,11 +44,6 @@ class Pokemon
     public function getSprite(): string
     {
         return $this->sprite;
-    }
-
-    public function getId(): int
-    {
-        return $this->id;
     }
 
     public function getType(): string

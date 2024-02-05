@@ -14,9 +14,6 @@ function cleanInput($input): string
 
 session_start();
 $_SESSION["errorMsg"] = "";  // Clear previous error message
-if (!isset($_SESSION["counter"])) {
-    $_SESSION["counter"] = 0;
-}
 
 $properties = ["name", "hp", "atk", "typePokemon"];
 $pokemonInfo = [];
@@ -45,7 +42,6 @@ switch ($pokemonInfo["typePokemon"]) {
             maxHp: $pokemonInfo["hp"],
             atk: $pokemonInfo["atk"],
             sprite: $pokemonInfo["sprite"],
-            id: $_SESSION["counter"]++
         );
         break;
     case "water":
@@ -53,8 +49,7 @@ switch ($pokemonInfo["typePokemon"]) {
             name: $pokemonInfo["name"],
             maxHp: $pokemonInfo["hp"],
             atk: $pokemonInfo["atk"],
-            sprite: $pokemonInfo["sprite"],
-            id: $_SESSION["counter"]++
+            sprite: $pokemonInfo["sprite"]
         );
         break;
     case "plant":
@@ -63,7 +58,6 @@ switch ($pokemonInfo["typePokemon"]) {
             maxHp: $pokemonInfo["hp"],
             atk: $pokemonInfo["atk"],
             sprite: $pokemonInfo["sprite"],
-            id: $_SESSION["counter"]++
         );
         break;
     case "normal":
@@ -72,7 +66,6 @@ switch ($pokemonInfo["typePokemon"]) {
             maxHp: $pokemonInfo["hp"],
             atk: $pokemonInfo["atk"],
             sprite: $pokemonInfo["sprite"],
-            id: $_SESSION["counter"]++
         );
         break;
     default:

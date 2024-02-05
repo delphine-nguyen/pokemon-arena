@@ -9,9 +9,8 @@ class PokemonWater extends Pokemon
         int $maxHp,
         int $atk,
         string $sprite,
-        int $id
     ) {
-        parent::__construct($name, $maxHp, $atk, $sprite, $id);
+        parent::__construct($name, $maxHp, $atk, $sprite);
     }
 
     public function getType(): string
