@@ -22,12 +22,12 @@ les Pokémons de type Feu, les Pokémons de type Eau et les Pokémons de type Pl
 Par contre, ils sont très peu efficaces contre les Pokémons de type Eau ou de type Feu et ne leur
 infligent que la moitié des dégâts (0.5*atk). Ils infligent des dégâts normaux aux Pokémon de type Normal.
 
-— Les Pokémons de type Eau sont super efficaces contre les Pokémons de type
+- Les Pokémons de type Eau sont super efficaces contre les Pokémons de type
 Feu et leur infligent deux fois plus de dégâts (2*atk). Par contre, ils sont très
 peu efficaces contre les Pokémons de type Eau ou de type Plante et ne leur
 infligent que la moitié des dégâts (0.5*atk). Ils infligent des dégâts normaux aux Pokémons de type Normal.
 
-— Les Pokémons de type Plante sont super efficaces contre les Pokémons de
+- Les Pokémons de type Plante sont super efficaces contre les Pokémons de
 type Eau et leur infligent deux fois plus de dégâts (2*atk). Par contre, ils sont
 très peu efficaces contre les Pokémons de type Plante ou de type Feu et ne leur
 infligent que la moitié des dégâts (0.5*atk). Ils infligent des dégâts normaux aux Pokémons de type Normal.
