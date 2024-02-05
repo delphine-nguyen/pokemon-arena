@@ -41,9 +41,11 @@ require_once("./class/PokemonWater.php");
             ?>
         </section>
         <form action="./handleChoice.php" id="choiceMenu" method="get">
-            <input type="submit" name="fight" value="Fight!" />
-            <input type="submit" name="heal" value="Heal everyone" />
-            <input type="submit" name="delete" value="Delete everyone" />
+            <section>
+                <input type="submit" name="fight" value="Fight!" />
+                <input type="submit" name="heal" value="Heal everyone" />
+                <input type="submit" name="delete" value="Delete everyone" />
+            </section>
             <section id="contestantsCards">
                 <?php
                 if (isset($_SESSION["contestants"]) && !empty($_SESSION["contestants"])) :
@@ -87,6 +89,7 @@ require_once("./class/PokemonWater.php");
             </section>
         </form>
     </main>
+    <script type="text/javascript" src="./assets/js/background.js"></script>
 </body>
 
 
