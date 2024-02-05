@@ -37,6 +37,7 @@
     </main>
 
     <script type="text/javascript" src="./assets/js/animations.js"></script>
+    <script type="text/javascript" src="./assets/js/background.js"></script>
 </body>
 
 </html>
