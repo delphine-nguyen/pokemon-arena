@@ -31,11 +31,21 @@ require_once("./class/PokemonWater.php");
         <h2 class="fontMain">Pokedex</h2>
     </header>
 
-    <main>
+    <main id="main">
+        <section class="logError">
+            <?php
+            session_start();
+            if (isset($_SESSION["errorMsg"]) && !empty($_SESSION["errorMsg"])) {
+                echo "<p class='errorMsg'>" . $_SESSION["errorMsg"] . "</p>";
+            }
+            ?>
+        </section>
         <form action="./handleChoice.php" id="choiceMenu" method="get">
+            <input type="submit" name="fight" value="Fight!" />
+            <input type="submit" name="heal" value="Heal everyone" />
+            <input type="submit" name="delete" value="Delete everyone" />
             <section id="contestantsCards">
                 <?php
-                session_start();
                 if (isset($_SESSION["contestants"]) && !empty($_SESSION["contestants"])) :
                     foreach ($_SESSION["contestants"] as $pokemon) :
                         $id = $pokemon->getId(); ?>
@@ -75,18 +85,7 @@ require_once("./class/PokemonWater.php");
                 <?php endforeach;
                 endif ?>
             </section>
-            <input type="submit" name="fight" value="Fight!" />
-            <input type="submit" name="heal" value="Heal everyone" />
-            <input type="submit" name="delete" value="Delete everyone" />
-
         </form>
-        <section class="logError">
-            <?php
-            if (isset($_SESSION["errorMsg"]) && !empty($_SESSION["errorMsg"])) {
-                echo "<p class='errorMsg'>" . $_SESSION["errorMsg"] . "</p>";
-            }
-            ?>
-        </section>
     </main>
 </body>
 
