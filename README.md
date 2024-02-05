@@ -1,4 +1,4 @@
-Exo : Pokémon
+# pokemon-arena
 
 Les Pokémon sont certes de très mignonnes créatures, mais ils sont également un
 bon exemple pour illustrer l’héritage. 
