@@ -30,18 +30,18 @@
                 <img src="./assets/img/pokeball_closed.png" alt="Closed pokeball" class="sprite">
                 <h3 class="name fontMain">Pokemon</h3>
                 <section class="properties">
-                    <article class="hp">
+                    <div class="hp">
                         <p>HP</p>
                         <p>-</p>
-                    </article>
-                    <article class="atk">
+                    </div>
+                    <div class="atk">
                         <p>ATK</p>
                         <p>-</p>
-                    </article>
-                    <article class="typePokemon">
+                    </div>
+                    <div class="typePokemon">
                         <p>Type</p>
                         <p>-</p>
-                    </article>
+                    </div>
                 </section>
             </article>
         </section>

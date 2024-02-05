@@ -40,37 +40,38 @@ require_once("./class/PokemonWater.php");
                     foreach ($_SESSION["contestants"] as $pokemon) :
                         $id = $pokemon->getId(); ?>
 
-                        <section class='card'>
+                        <article class='card fourthColorBg'>
 
-                            <article class='sprite'>
-                                <img class='sprite' src='<?php
-                                                            echo $pokemon->getSprite(); ?>' />
-                            </article>
+                            <img class='sprite' src='<?php
+                                                        echo $pokemon->getSprite(); ?>' />
 
                             <h3 class='fontMain name'>
                                 <?php echo $pokemon->getName(); ?>
                             </h3>
-                            <article class='hp'>
-                                <p>HP</p>
-                                <p>
-                                    <?php echo $pokemon->getHp() ?>
-                                </p>
-                            </article>
 
-                            <article class='atk'>
-                                <p>ATK</p>
-                                <p>
-                                    <?php echo $pokemon->getAtk() ?>
-                                </p>
-                            </article>
-                            <article class='typePokemon'>
-                                <p>Type</p>
-                                <p>
-                                    <?php echo $pokemon->getType() ?>
-                                </p>
-                            </article>
+                            <section class="properties">
+                                <div class='hp'>
+                                    <p>HP</p>
+                                    <p>
+                                        <?php echo $pokemon->getHp() ?>
+                                    </p>
+                                </div>
+
+                                <div class='atk'>
+                                    <p>ATK</p>
+                                    <p>
+                                        <?php echo $pokemon->getAtk() ?>
+                                    </p>
+                                </div>
+                                <div class='typePokemon'>
+                                    <p>Type</p>
+                                    <p>
+                                        <?php echo $pokemon->getType() ?>
+                                    </p>
+                                </div>
+                            </section>
                             <input type='checkbox' name='<?php echo $id ?>'>
-                        </section>
+                        </article>
                 <?php endforeach;
                 endif ?>
             </section>
