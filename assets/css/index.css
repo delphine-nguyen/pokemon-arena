@@ -5,7 +5,7 @@
 	height: 300px;
 
 	position: absolute;
-	top: 35vh;
+	top: 130vh;
 	left: 25vw;
 }
 
@@ -15,7 +15,7 @@
 
 #goPokedex > img {
 	position: absolute;
-	top: 30vh;
+	top: 125vh;
 	left: 60vw;
 }
 

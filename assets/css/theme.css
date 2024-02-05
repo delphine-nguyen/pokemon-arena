@@ -124,7 +124,7 @@ main {
 	min-height: 100vh;
 	width: 100%;
 
-	backdrop-filter: blur(10px);
+	/* backdrop-filter: blur(10px); */
 
 	z-index: 1;
 }
@@ -150,7 +150,7 @@ h3 {
 }
 
 /* Parallax */
-#background {
+.background {
 	display: grid;
 
 	grid-template-columns: repeat(5, 1fr);
@@ -167,13 +167,18 @@ h3 {
 	width: 100%;
 }
 
-#background > .blankSpace {
+.background > .blankSpace {
 	grid-column: 2 / span 3;
 }
 
-#background > img {
+.background > img {
 	width: 250px;
 	height: 200px;
+}
+
+.background.blurred {
+	filter: blur(20px);
+	opacity: 0;
 }
 
 /* Header */
