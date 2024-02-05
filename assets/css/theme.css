@@ -192,6 +192,8 @@ header {
 	justify-content: center;
 
 	padding: 10px;
+
+	border-radius: 10px;
 }
 
 .card > .properties > div {
@@ -215,4 +217,13 @@ header {
 .card > .name {
 	font-weight: bold;
 	font-size: 25px;
+}
+
+/* Errors */
+
+.errorMsg {
+	color: red;
+	border: 1px dashed red;
+	padding: 10px 20px;
+	margin: 10px;
 }
