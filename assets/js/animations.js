@@ -1,4 +1,4 @@
-const goPokedexImg = document.querySelector('#goPokedex\\" > img');
+const goPokedexImg = document.querySelector("#goPokedex > img");
 
 goPokedexImg.addEventListener("mouseover", (event) => {
 	goPokedexImg.src = "./assets/img/pokedex_open.png";

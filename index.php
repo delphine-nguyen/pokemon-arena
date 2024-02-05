@@ -29,7 +29,7 @@
                 <img src="./assets/img/pokeball_closed.png" alt="Closed pokeball">
             </a>
 
-            <a href=" ./pokedex.php" id=goPokedex">
+            <a href=" ./pokedex.php" id="goPokedex">
                 <img src="./assets/img/pokedex_closed.png" alt="Closed pokedex">
             </a>
         </section>
