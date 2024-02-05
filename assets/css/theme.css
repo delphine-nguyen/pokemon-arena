@@ -121,8 +121,9 @@ body {
 
 main {
 	min-height: 100vh;
-	width: 70vw;
-	margin: 0 auto;
+	width: 100vw;
+
+	backdrop-filter: blur(10px);
 
 	z-index: 1;
 }
@@ -226,4 +227,5 @@ header {
 	border: 1px dashed red;
 	padding: 10px 20px;
 	margin: 10px;
+	background-color: black;
 }
