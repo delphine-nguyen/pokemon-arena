@@ -8,6 +8,7 @@ require_once("./class/PokemonWater.php");
 session_start();
 if (isset($_GET['fight'])) {
     $chosen = array_keys($_GET);
+    var_dump($chosen);
 
 
     $contestants = $_SESSION["contestants"];
@@ -23,9 +24,9 @@ if (isset($_GET['fight'])) {
     } else {
 
         foreach ($contestants as $pokemon) {
-            if ($pokemon->getId() == $chosen[0]) {
+            if ($pokemon->getId() == $chosen[1]) {
                 $_SESSION["pokemon1"] = $pokemon;
-            } elseif ($pokemon->getId() == $chosen[1]) {
+            } elseif ($pokemon->getId() == $chosen[2]) {
                 $_SESSION["pokemon2"] = $pokemon;
             }
         }
