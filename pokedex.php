@@ -36,39 +36,43 @@ require_once("./class/PokemonWater.php");
             <section id="contestantsCards">
                 <?php
                 session_start();
-                if (isset($_SESSION["contestants"]) && !empty($_SESSION["contestants"])) {
-                    foreach ($_SESSION["contestants"] as $pokemon) {
-                        $id = $pokemon->getId();
-                        echo "<section class='pokemonCard'>";
+                if (isset($_SESSION["contestants"]) && !empty($_SESSION["contestants"])) :
+                    foreach ($_SESSION["contestants"] as $pokemon) :
+                        $id = $pokemon->getId(); ?>
 
-                        echo "<article class='sprite'>";
-                        echo "<img class='sprite' src='";
-                        echo $pokemon->getSprite();
-                        echo "'/>";
-                        echo "</article>";
+                        <section class='card'>
 
-                        echo "<article class='name'>";
-                        echo $pokemon->getName();
+                            <article class='sprite'>
+                                <img class='sprite' src='<?php
+                                                            echo $pokemon->getSprite(); ?>' />
+                            </article>
 
-                        echo "</article>";
-                        echo "<article class='hp'>";
-                        echo "<p>HP</p>";
-                        echo "<p>" . $pokemon->getHp() . "</p>";
-                        echo "</article>";
+                            <h3 class='fontMain name'>
+                                <?php echo $pokemon->getName(); ?>
+                            </h3>
+                            <article class='hp'>
+                                <p>HP</p>
+                                <p>
+                                    <?php echo $pokemon->getHp() ?>
+                                </p>
+                            </article>
 
-                        echo "<article class='atk'>";
-                        echo "<p>ATK</p>";
-                        echo "<p>" . $pokemon->getAtk() . "</p>";
-                        echo "</article>";
-                        echo "<article class='typePokemon'>";
-                        echo "<p>Type</p>";
-                        echo "<p>" . $pokemon->getType() . "</p>";
-                        echo "</article>";
-                        echo "<input type='checkbox' name='$id' >";
-                        echo "</section>";
-                    }
-                }
-                ?>
+                            <article class='atk'>
+                                <p>ATK</p>
+                                <p>
+                                    <?php echo $pokemon->getAtk() ?>
+                                </p>
+                            </article>
+                            <article class='typePokemon'>
+                                <p>Type</p>
+                                <p>
+                                    <?php echo $pokemon->getType() ?>
+                                </p>
+                            </article>
+                            <input type='checkbox' name='<?php echo $id ?>'>
+                        </section>
+                <?php endforeach;
+                endif ?>
             </section>
             <input type="submit" name="fight" value="Fight!" />
             <input type="submit" name="heal" value="Heal everyone" />
