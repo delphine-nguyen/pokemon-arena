@@ -13,7 +13,7 @@ function cleanInput($input): string
 }
 
 session_start();
-$_SESSION["errorMsg"] = "";  // Clear previous error message
+$_SESSION["atelierErrorMsg"] = "";  // Clear previous error message
 
 $properties = ["name", "hp", "atk", "typePokemon"];
 $pokemonInfo = [];
@@ -23,7 +23,7 @@ foreach ($properties as $property) {
         $pokemonInfo[$property] = cleanInput($_POST[$property]);
         echo $pokemonInfo[$property];
     } else {
-        $_SESSION["errorMsg"] = "Please fill input '$property'";
+        $_SESSION["atelierErrorMsg"] = "Please fill input '$property'";
         header("Location: ./atelier.php#main");
         exit();
     }
@@ -69,7 +69,7 @@ switch ($pokemonInfo["typePokemon"]) {
         );
         break;
     default:
-        $_SESSION["errorMsg"] = "Type of pokemon must be either 'normal', 'water', 'fire' or 'plant'";
+        $_SESSION["atelierErrorMsg"] = "Type of pokemon must be either 'normal', 'water', 'fire' or 'plant'";
         header("Location: ./atelier.php#main");
         exit();
 }

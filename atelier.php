@@ -77,8 +77,8 @@
         <section class="logError">
             <?php
             session_start();
-            if (isset($_SESSION["errorMsg"]) && !empty($_SESSION["errorMsg"])) {
-                echo "<p class='errorMsg'>" . $_SESSION["errorMsg"] . "</p>";
+            if (isset($_SESSION["atelierErrorMsg"]) && !empty($_SESSION["atelierErrorMsg"])) {
+                echo "<p class='errorMsg'>" . $_SESSION["atelierErrorMsg"] . "</p>";
             }
             ?>
         </section>
