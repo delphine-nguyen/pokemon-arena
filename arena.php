@@ -51,9 +51,9 @@ require_once("./class/PokemonWater.php");
 
             <article id="msg">
                 <?php
-
-
-                ?>
+                foreach ($_SESSION["combatDisplay"] as $msg) : ?>
+                    <p><?php echo $msg; ?>
+                    <?php endforeach; ?>
             </article>
         </section>
 
